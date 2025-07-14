@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MultiMinds - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header class="header">
+	<img src="images/logo.png" class="logo">
+	<form>
+		<select id="lang-switcher">
+			<option value="pl">PL</option>
+			<option value="en">EN</option>
+		</select>
+	</form>
+  </header>
+
+  <nav>
+    <a href="index.html">START</a>
+    <a href="o-nas.html">O NAS</a>
+    <a href="web-design.html">WEB DESIGN</a>
+    <a href="grafika-promocja.html">GRAFIKA I PROMOCJA</a>
+    <a href="kursy-szkolenia.html">KURSY I SZKOLENIA</a>
+    <a href="kontakt.html">KONTAKT</a>
+  </nav>
+
+  <main class="main">
+    <h2>Witamy w MultiMinds!</h2>
+    <p>Profesjonalne projektowanie stron internetowych, grafiki reklamowej i aplikacji. Prowadzimy także kursy i szkolenia IT.</p>
+
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper barlow-bold">
+        <!-- SLIDE 1 -->
+		<div class="swiper-slide slide1">
+			<p> 
+				Projektujemy strony www:<br>
+				💡HTML/CSS<br>
+				💡JS/PHP<br>
+				💡Joomla/Wordpress 
+			</p>
+		</div>
+        <div class="swiper-slide slide2">
+			<p> 
+				Tworzymy logotypy:<br>
+				💡grafika wektorowa<br>
+				💡grafika rastrowa
+			</p>
+		</div>
+        <div class="swiper-slide slide3">
+			<p> 
+				Projektujemy i wykonujemy<br>
+				materiały promocyjne:<br>
+				💡ulotki, plakaty<br>
+				💡teczki, zakładki<br>
+				💡banery, roll-upy<br>
+				   i inne
+			</p>
+		</div>
+		<div class="swiper-slide slide4">
+			<p> 
+				Szkolimy, prowadzimy kursy IT, <br>
+				edukujemy...
+			</p>
+		</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 MultiMinds. Wszelkie prawa zastrzeżone.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-init.js"></script>
+</body>
+</html>

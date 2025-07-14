@@ -38,68 +38,30 @@
 	</div>
   </nav>
   <main class="main">
-    <h2>Witamy w MMStudio!</h2>
-    <p>Profesjonalne projektowanie stron internetowych, grafiki reklamowej i aplikacji. Prowadzimy także kursy i szkolenia IT.</p>
+	<section class="kontakt">
+		<h2>Kontakt</h2>
+		<p><strong>E-mail:</strong> <a href="mailto:mmstudio.dg@gmail.com">mmstudio.dg@gmail.com</a></p>
+		<p><strong>Telefon:</strong> 
+			<button id="showPhone" class="phone-btn">Pokaż numer</button>
+			<span id="phoneNumber" class="hidden">+48 502 713 698</span>
+		</p>
+		<form id="contactForm" action="https://formsubmit.co/@mmstudio.dg@gmail.com" method="POST">
+			<label for="name">Imię:</label>
+			<input type="text" id="name" name="name" required>
 
-    <!-- Swiper -->
-    <div class="swiper">
-      <div class="swiper-wrapper barlow-bold">
-        <!-- SLIDE 1 -->
-		<div class="swiper-slide slide1">
-			<p> 
-				Projektujtowanie strony www:<br>
-				💡HTML/CSS<br>
-				💡JS/PHP<br>
-				💡Joomla/Wordpress 
-			</p>
-		</div>
-        <div class="swiper-slide slide2">
-			<p> 
-				Tworzenie logotypów:<br>
-				💡grafika wektorowa<br>
-				💡grafika rastrowa
-			</p>
-		</div>
-        <div class="swiper-slide slide3">
-			<p> 
-				Projektowanie i wykonawstwo<br>
-				materiałów promocyjnych:<br>
-				💡ulotki, plakaty<br>
-				💡teczki, zakładki<br>
-				💡banery, roll-upy<br>
-				   i inne
-			</p>
-		</div>
-		<div class="swiper-slide slide4">
-			<p> 
-				Szkolenia, prowadzenie kursów, <br>
-				edukacja...
-			</p>
-		</div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-	<!-- O mnie -->
-	<h1> O mnie </h1>
-	<p class="akapit">
-	Witaj! Mam na imię Maciej i od wielu lat tworzę nowoczesne strony internetowe, aplikacje oraz grafikę cyfrową.
-	Wykonuję także różnorodne reklamowe materiały poligraficzne: banery, roll-upy, plakaty, ulotki itp.
-	Specjalizuję się w technologiach HTML, CSS, JavaScript, PHP oraz systemach CMS takich jak WordPress i Joomla. Tworzę zarówno proste strony wizytówkowe, jak i bardziej zaawansowane rozwiązania dopasowane do indywidualnych potrzeb.
+			<label for="email">Adres e-mail:</label>
+			<input type="email" id="email" name="email" required>
 
-	Programuję także aplikacje mobilne i zajmuję się tworzeniem grafiki 2D/3D — korzystając z profesjonalnych narzędzi komercyjnych oraz oprogramowania open source.
-
-	Moją pasją jest dzielenie się wiedzą — od lat aktywnie angażuję się w edukację, ucząc innych projektowania i programowania z praktycznym podejściem.
-	</p>
-</main>
-
-
-  <footer class="footer">
+			<label for="message">Wiadomość:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+			<input name="_formsubmit_id" type="text" style="display:none">
+			<button type="submit">Wyślij wiadomość</button>
+		</form>
+	</section>
+ </main>
+ <footer class="footer">
     &copy; 2025 MultiMinds. Wszelkie prawa zastrzeżone.
-  </footer>
+ </footer>
   
   <!-- DOSTĘPNOŚĆ -->
 		<!-- Przycisk otwierający widżet -->
@@ -114,8 +76,12 @@
 		  <button onclick="resetAccessibility()">♻️ Resetuj</button>
 		</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="js/swiper-init.js"></script>
+  <script>
+  document.getElementById('showPhone').addEventListener('click', function() {
+    document.getElementById('phoneNumber').classList.remove('hidden');
+    this.style.display = 'none';
+  });
+</script>
   
   <script>
 	  document.querySelectorAll('.options li').forEach(option => {
