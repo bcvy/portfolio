@@ -170,6 +170,13 @@ nav a:hover {
   gap: 8px;
   color: #fff;
 }
+
+.selected {
+
+  padding: 15px 25px;
+  position: relative;
+  overflow: hidden;
+}
 .custom-select img {
   width: 20px;
   height: 14px;
