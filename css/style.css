@@ -172,7 +172,9 @@ nav a:hover {
 }
 
 .selected {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 15px 25px;
   position: relative;
   overflow: hidden;
