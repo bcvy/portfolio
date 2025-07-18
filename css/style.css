@@ -1,6 +1,3 @@
-
-
-
 /* Reset */
 * {
   margin: 0;
@@ -84,8 +81,6 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
-
 /* Stopka */
 .footer {
   background-color: #222;
@@ -93,50 +88,22 @@ nav a:hover {
   text-align: center;
   padding: 20px;
 }
-
-/* Swiper custom styles */
-.swiper {
-  width: 100%;
-  max-width: 1000px;
-
-  margin: 20px auto;
-  aspect-ratio: 10 / 4; 
-}
-
-.swiper-slide {
+/* subpages: webdesign, grafika  */
+.subpage{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eee;
-  background-size: cover;
-	background-position: center; 
-    background-repeat: no-repeat;
-  font-size: clamp(0.8rem, 2.0vw, 1.5rem);
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.slide1 {
-	
-	background-image: url('../images/slide1.png');
-	
-	padding: 10% 0 0 10%;
+.webdesign, .grafika {
+  flex: 1 1 300px;
+  min-width: 300px;
+
 }
-.slide2 {
-	background-image: url('../images/slide2.png');
-	padding: 10% 0 0 60%;
+.prawy {
+  flex: 1 1 300px;
+  min-width: 500px;
 }
 
-.slide3 {
-	background-image: url('../images/slide3.png');
-	padding: 10% 0 0 8%;
-}
-.slide4 {
-	background-image: url('../images/slide4.png');
-	padding: 10% 0 0 55%;
-}
-.akapit {
-	margin: 1% 0 1% 0;
-	text-align: justify;
-}
 /* Responsywność */
 @media (max-width: 768px) {
   .header {
@@ -156,11 +123,12 @@ nav a:hover {
     flex: 1 1 100%;
   }
 }
-/*CUSTOM SELECT */
+/*CUSTOM SELECT - JĘZYKI */
 .custom-select {
   position: relative;
   width: 160px;
   cursor: pointer;
+  z-index:100;
 }
 .custom-select .selected,
 .custom-select .options li {
@@ -201,6 +169,7 @@ li.lang:hover
 .custom-select:hover .options {
   display: block;
 }
+
 /* CUSTOM LIST */
 .custom-list {
   list-style: none;
@@ -212,6 +181,7 @@ li.lang:hover
   font-size: 1.05rem;
   line-height: 1.5;
 }
+
 /* KONTAKT */
 .phone-btn {
   background-color: #008CBA;
@@ -251,212 +221,42 @@ button[type="submit"] {
 	width: 50%;
 	margin: auto;
 }
-
-/* ACCESSIBILITY */
-		/* Przycisk aktywujący widżet */
-		.hidden {
-			display: none !important;
-		}
-	
-		#toggle-widget {
-		  position: fixed;
-		  bottom: 1rem;
-		  right: 1rem;
-		  font-size: 1.5rem;
-		  background: #0044aa;
-		  color: #fff;
-		  border: none;
-		  padding: 0.6rem;
-		  border-radius: 50%;
-		  cursor: pointer;
-		  z-index: 10000;
-		}
-
-		/* Kontener widżetu */
-		#accessibility-widget {
-		  position: fixed;
-		  bottom: 4.5rem;
-		  right: 1rem;
-		  background: #fff;
-		  border: 2px solid #ccc;
-		  border-radius: 10px;
-		  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-		  padding: 0.8rem;
-		  z-index: 9999;
-		  display: flex;
-		  flex-direction: column;
-		  gap: 0.4rem;
-		  font-size: 0.95rem;
-		}
-
-		#accessibility-widget button {
-		  background: #f0f0f0;
-		  border: none;
-		  padding: 0.4rem 0.6rem;
-		  border-radius: 6px;
-		  cursor: pointer;
-		  transition: background 0.3s;
-		}
-
-		#accessibility-widget button:hover {
-		  background: #ddd;
-		}
-
-		/* Tryb wysokiego kontrastu */
-		.high-contrast {
-		  background-color: #000 !important;
-		  color: #fff !important;
-		}
-		
-		.high-contrast .main .swiper-slide {
-		  background-color: #000 !important;
-		  color: #fff !important;
-		}
-
-		.high-contrast .main {
-		  background-color: #000 !important;
-		  color: #fff !important;
-		}
-
-		.high-contrast a {
-		  color: #00ffff !important;
-		}
-
-		/* Czcionka dyslektyczna */
-		.dyslexic-font {
-		  font-family: 'OpenDyslexic', Arial, sans-serif !important;
-		}
-
-		/* Podkreślone linki */
-		.underline-links a {
-		  text-decoration: underline !important;
-		}
-
-		/* Dynamiczne powiększanie tekstu */
-		body[data-font-size="100"] { font-size: 100%; }
-		body[data-font-size="120"] { font-size: 120%; }
-		body[data-font-size="140"] { font-size: 140%; }
-
-		/* Czcionka OpenDyslexic (Google Fonts link) */
-		@font-face {
-		  font-family: 'OpenDyslexic';
-		  src: url('../fonts/OpenDyslexic-Regular.woff') format('woff');
-		  font-weight: normal;
-		  font-style: normal;
-		}
-		.dyslexic-font {
-		  font-family: 'OpenDyslexic', Arial, sans-serif !important;
-		}
-		.dyslexic-font .swiper-slide{
-			font-family: 'OpenDyslexic', Arial, sans-serif !important;
-		}
-
-
-/* BARLOW CZCIONKA */
-.barlow-thin {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+/* PRICING */
+.table-wrapper {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.barlow-extralight {
-  font-family: "Barlow", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.barlow-light {
-  font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+thead {
+  background-color: #3498db;
+  color: white;
 }
 
-.barlow-regular {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.barlow-medium {
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+tr:hover {
+  background-color: #f0f8ff;
 }
 
-.barlow-semibold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+.note {
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 20px;
+  color: #666;
 }
 
-.barlow-bold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
-.barlow-extrabold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
 
-.barlow-black {
-  font-family: "Barlow", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.barlow-thin-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.barlow-extralight-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.barlow-light-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.barlow-regular-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.barlow-medium-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.barlow-semibold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.barlow-bold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.barlow-extrabold-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.barlow-black-italic {
-  font-family: "Barlow", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
