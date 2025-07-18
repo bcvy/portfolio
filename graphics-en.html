@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMStudio – web/graphics/app design, IT training and courses</title>
+  <meta name="description" content="I design logos, leaflets, banners, posters, social media graphics and more. Professional designs for print and online use.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/accessibility.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="js/change_language.js"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="images/logo.png" class="logo" alt="MMStudio logo – web design, apps, graphics. IT courses and training.">
+  </header>
+  <nav>
+    <a href="index.html">HOME</a>
+		<a href="webdesign-en.html">WEB DESIGN</a>
+		<a href="graphics-en.html">GRAPHICS & PROMOTION</a>
+		<a href="courses-en.html">COURSES & TRAINING</a>
+		<a href="pricing-en.html">PRICING</a>
+		<a href="contact-en.html">CONTACT</a>
+    <!-- LANGUAGE -->
+    <div class="custom-select">
+    <div class="selected">
+        <img src="flags/english.png" alt="EN" /> English
+    </div>
+            <ul class="options">
+                <li class="lang" data-lang="pl">
+                <img src="flags/polish.png" alt="PL" /> Polski
+                </li>
+                <li class="lang" data-lang="en">
+                <img src="flags/english.png" alt="EN" /> English
+                </li>
+            </ul>
+    </div>
+  </nav>
+
+  <main class="main subpage">
+    <section class="grafika">
+      <h1>Digital Graphics</h1>
+      <p class="akapit">
+        I offer a complete range of graphic design services – from brand identity to marketing materials ready for print or online use.
+      </p>
+      <p class="akapit">
+        My services include:
+      </p>
+      <ul class="custom-list">
+        <li>🖋️ Logo and brand identity design</li>
+        <li>📱 Graphics and animations for social media</li>
+        <li>📰 Leaflets, posters, and advertising banners</li>
+        <li>📂 Business folders and branded materials</li>
+        <li>📦 Roll-ups and other exhibition formats</li>
+        <li>🖨️ Design-only or full-service printing solutions</li>
+      </ul>
+      <h3 class="akapit">Why choose me for your graphic project?</h3>
+      <ul class="custom-list">
+        <li>🎯 Visual consistency tailored to your target audience</li>
+        <li>📐 Professionally prepared for print and publication</li>
+        <li>🧠 Creative thinking and responsiveness to your needs</li>
+        <li>⏱️ On-time delivery and flexible collaboration</li>
+        <li>🤝 Possibility of long-term graphic partnership</li>
+      </ul>
+    </section>
+
+    <section class="prawy">
+      <!-- Swiper -->
+      <div class="swiper2 swiper-wb">
+        <div class="swiper-wrapper barlow-bold">
+          <!-- SLIDES -->
+          <div class="swiper-slide swiper-slide-wb slide1-gfx" aria-label="Example of printed materials designed by me. Recruitment poster for a school complex."></div>
+          <div class="swiper-slide swiper-slide-wb slide2-gfx" aria-label="Example of promotional materials I designed. Roll-up banner for a school complex."></div>
+          <div class="swiper-slide swiper-slide-wb slide3-gfx" aria-label="Another promotional material example: leaflet for a medical clinic."></div>
+          <div class="swiper-slide swiper-slide-wb slide4-gfx" aria-label="Graphic materials prepared for clients: logos and brand identity."></div>
+          <div class="swiper-slide swiper-slide-wb slide5-gfx" aria-label="Advertising banner created for a school complex."></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 MMStudio. All rights reserved.
+  </footer>
+
+  <!-- ACCESSIBILITY -->
+  <button id="toggle-widget" aria-label="Accessibility options" title="Accessibility">♿</button>
+
+  <div id="accessibility-widget" aria-label="Accessibility options" class="hidden">
+    <button onclick="cycleFontSize()">🔠 Change font size</button>
+    <button onclick="toggleContrast()">🌓 High contrast mode</button>
+    <button onclick="toggleUnderlineLinks()">🔗 Underline links</button>
+    <button onclick="toggleDyslexicFont()">📖 Dyslexia-friendly font</button>
+    <button onclick="resetAccessibility()">♻️ Reset</button>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-init.js"></script>
+
+  <!--ACCESIBILITY SCRIPT-->
+  <script src="js/accessibility.js"></script>
+</body>
+</html>

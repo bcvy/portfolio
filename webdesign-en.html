@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMStudio – web design / graphics / apps, IT training and courses</title>
+  <meta name="description" content="I create modern, responsive and editable websites tailored to your needs. Make your presence on the web stand out.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/accessibility.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100..900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="js/change_language.js"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="images/logo.png" class="logo" alt="MMStudio logo – web design, apps, graphics. IT courses and training.">
+  </header>
+  <nav>
+    <a href="index.html">HOME</a>
+		<a href="webdesign-en.html">WEB DESIGN</a>
+		<a href="graphics-en.html">GRAPHICS & PROMOTION</a>
+		<a href="courses-en.html">COURSES & TRAINING</a>
+		<a href="pricing-en.html">PRICING</a>
+		<a href="contact-en.html">CONTACT</a>
+    <!-- LANGUAGE -->
+    <div class="custom-select">
+			<div class="selected">
+				<img src="flags/english.png" alt="EN" /> English
+			</div>
+					<ul class="options">
+						<li class="lang" data-lang="pl" onclick="setLang('pl')">
+						<img src="flags/polish.png" alt="PL" /> Polski
+						</li>
+						<li class="lang" data-lang="en" onclick="setLang('en')">
+						<img src="flags/english.png" alt="EN" /> English
+						</li>
+					</ul>
+			</div>
+  </nav>
+
+  <main class="main subpage">
+    <section class="webdesign">
+      <h1>Web Design</h1>
+      <p class="akapit">
+        I design modern, aesthetic and functional websites tailored to individual needs. I use technologies like HTML, CSS, JavaScript and PHP, ensuring responsiveness, clarity, and accessibility for all users.
+      </p>
+      <p class="akapit">
+        I offer:
+      </p>
+      <ul class="custom-list">
+        <li>🖥️ Website creation (business pages, blogs, portals)</li>
+        <li>📱 Responsive design – optimized for all devices</li>
+        <li>⚙️ CMS implementation (WordPress, Joomla)</li>
+        <li>🧩 Easy content editing by the client</li>
+        <li>🌐 Domain and hosting support</li>
+        <li>🔧 Technical support and updates</li>
+        <li>🎓 Website management training</li>
+      </ul>
+      <h3 class="akapit">Why work with me?</h3>
+      <ul class="custom-list">
+        <li>✅ Personalized approach to every project</li>
+        <li>💡 Clear communication and consulting throughout</li>
+        <li>📈 SEO and speed optimized websites</li>
+        <li>🧑‍🦽 Accessibility-compliant (WCAG)</li>
+        <li>🔒 Focus on security and standards compliance</li>
+      </ul>
+    </section>
+
+    <section class="prawy">
+      <!-- Swiper -->
+      <div class="swiper2 swiper-wb">
+        <div class="swiper-wrapper barlow-bold">
+          <!-- SLIDE 1 -->
+          <div class="swiper-slide swiper-slide-wb slide1-wb" aria-label="Example of a modern, responsive website created for a car workshop."></div>
+          <div class="swiper-slide swiper-slide-wb slide2-wb" aria-label="Another website example made for a medical clinic."></div>
+          <div class="swiper-slide swiper-slide-wb slide3-wb" aria-label="Next project – an online paint shop."></div>
+          <div class="swiper-slide swiper-slide-wb slide4-wb" aria-label="Website example created for a construction company."></div>  
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 MMStudio. All rights reserved.
+  </footer>
+
+  <!-- ACCESSIBILITY -->
+  <button id="toggle-widget" aria-label="Accessibility options" title="Accessibility">♿</button>
+
+  <!-- WIDGET -->
+  <div id="accessibility-widget" aria-label="Accessibility options" class="hidden">
+    <button onclick="cycleFontSize()">🔠 Change font size</button>
+    <button onclick="toggleContrast()">🌓 High contrast mode</button>
+    <button onclick="toggleUnderlineLinks()">🔗 Underline links</button>
+    <button onclick="toggleDyslexicFont()">📖 Dyslexia-friendly font</button>
+    <button onclick="resetAccessibility()">♻️ Reset</button>
+  </div>
+
+  <!--SCRIPTS-->
+  <!--SWIPER-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-init.js"></script>
+
+  <!-- ACCESSIBILITY SCRIPT-->
+  <script src="js/accessibility.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MMStudio - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
+        <meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
+        <meta name="keywords" content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/swiper.css" />
+        <link rel="stylesheet" href="css/accessibility.css" />
+        <link rel="stylesheet" href="css/barlow-font.css" />
+        <link rel="stylesheet" href="css/social-widget.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <script src="js/detect_language.js"></script>
+    </head>
+    <body>
+          <header class="header">
+            <img src="images/logo.png" class="logo" alt="Logo MMStudio - projektowanie www, aplikacji, grafiki. Kursu i szkolenia IT.">
+         </header>
+         <nav>
+            <a href="index.html">START</a>
+            <a href="webdesign.html">WEB DESIGN</a>
+            <a href="grafika.html">GRAFIKA I PROMOCJA</a>
+            <a href="kursy.html">KURSY I SZKOLENIA</a>
+            <a href="cennik.html">CENNIK</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <!-- LANGUAGE -->
+            <div class="custom-select">
+            <div class="selected">
+                <img src="flags/polish.png" alt="PL" /> Polski
+            </div>
+                    <ul class="options">
+                        <li class="lang" data-lang="pl" onclick="setLang('pl')">
+                        <img src="flags/polish.png" alt="PL" /> Polski
+                        </li>
+                        <li class="lang" data-lang="en" onclick="setLang('en')">
+                        <img src="flags/english.png" alt="EN" /> English
+                        </li>
+                    </ul>
+            </div>
+          </nav>
+          <main class="main">
+            <h2>Cennik usług</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usługa</th>
+                            <th>Opis</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Strona wizytówka (HTML/CSS)</td>
+                            <td>Do 5 podstron, responsywny design</td>
+                            <td>800 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Strona WordPress / Joomla</td>
+                            <td>Instalacja, konfiguracja, szablon</td>
+                            <td>1200 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Sklep internetowy (WooCommerce)</td>
+                            <td>Konfiguracja, koszyk, płatności</td>
+                            <td>2000 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Modyfikacja istniejącej strony</td>
+                            <td>Poprawki, aktualizacje, optymalizacja</td>
+                            <td>od 150 zł/h</td>
+                        </tr>
+                        <tr>
+                            <td>Dodatkowe moduły PHP/JS</td>
+                            <td>Formularze, integracje, dynamiczne treści</td>
+                            <td>Wycena indywidualna</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Graphic Design Pricing -->
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Projekt graficzny</th>
+                            <th>Opis</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Logo</td>
+                            <td>Nowoczesny logotyp wektorowy</td>
+                            <td>300 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Ulotka / Plakat</td>
+                            <td>Format A5–A3, jednostronny lub dwustronny</td>
+                            <td>200 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Roll-up / Baner</td>
+                            <td>Projekt na potrzeby druku wielkoformatowego</td>
+                            <td>200 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Teczka firmowa</td>
+                            <td>Szablon teczki z brandingiem</td>
+                            <td>200 zł</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="note">
+                                Podane ceny obejmują wyłącznie wykonanie projektu graficznego.  
+                                Istnieje możliwość zlecenia druku – wycena i realizacja na życzenie klienta.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+          </main>   
+          <footer class="footer">
+            &copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
+          </footer>
+        <!-- SOCIAL WIDGET-->
+        <div id="social-widget">
+            <a href="https://www.facebook.com/mmstudio.dg" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/mmstudio.dg" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+         <!-- ACCESSIBILITY WIDGET -->
+        <!-- button opening the widget -->
+        <button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
+    
+        <!-- WIDGET -->
+        <div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
+            <button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
+            <button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
+            <button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
+            <button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
+            <button onclick="resetAccessibility()">♻️ Resetuj</button>
+        </div>
+        <!--SCRIPTS-->
+        <!--SWIPER-->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+         <script src="js/swiper-init.js"></script>
+        
+          <!-- ACCESSIBILITY SCRIPT-->
+          <script src="js/accessibility.js"></script>
+</body>
+</html>

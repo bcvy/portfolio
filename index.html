@@ -4,174 +4,139 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>MMStudio - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
+	<meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
+	<meta name="keywords" content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/accessibility.css" />
+	<link rel="stylesheet" href="css/barlow-font.css" />
+	<link rel="stylesheet" href="css/social-widget.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
 	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="js/detect_language.js"></script>
 </head>
 <body>
-  <header class="header">
-	<img src="images/logo.png" class="logo">
-  </header>
-  <nav>
-    <a href="index.html">START</a>
-    <a href="webdesign.html">WEB DESIGN</a>
-    <a href="grafika.html">GRAFIKA I PROMOCJA</a>
-    <a href="kursy.html">KURSY I SZKOLENIA</a>
-    <a href="kontakt.html">KONTAKT</a>
-	<!-- JĘZYK -->
-	<div class="custom-select">
-	  <div class="selected">
-		<img src="flags/polish.png" alt="PL" /> Polski
-	  </div>
-			<ul class="options">
-				<li class="lang" data-lang="pl">
-				  <img src="flags/polish.png" alt="PL" /> Polski
-				</li>
-				<li class="lang" data-lang="en">
-				  <img src="flags/english.png" alt="EN" /> English
-				</li>
-			</ul>
+  	<header class="header">
+		<img src="images/logo.png" class="logo" alt="Logo MMStudio - projektowanie www, aplikacji, grafiki. Kursu i szkolenia IT.">
+ 	</header>
+ 	<nav>
+		<a href="index.html">START</a>
+		<a href="webdesign.html">WEB DESIGN</a>
+		<a href="grafika.html">GRAFIKA I PROMOCJA</a>
+		<a href="kursy.html">KURSY I SZKOLENIA</a>
+		<a href="cennik.html">CENNIK</a>
+		<a href="kontakt.html">KONTAKT</a>
+		<!-- LANGUAGE -->
+		<div class="custom-select">
+		<div class="selected">
+			<img src="flags/polish.png" alt="PL" /> Polski
+		</div>
+				<ul class="options">
+					<li class="lang" data-lang="pl" onclick="setLang('pl')">
+					<img src="flags/polish.png" alt="PL" /> Polski
+					</li>
+					<li class="lang" data-lang="en" onclick="setLang('en')">
+					<img src="flags/english.png" alt="EN" /> English
+					</li>
+				</ul>
+		</div>
+  	</nav>
+  	<main class="main">
+		<h2>Witamy w MMStudio!</h2>
+		<p>Profesjonalne projektowanie stron internetowych, grafiki reklamowej i aplikacji. Prowadzimy także kursy i szkolenia IT.</p>
+
+		<!-- Swiper -->
+		<div class="swiper">
+		<div class="swiper-wrapper barlow-bold">
+			<!-- SLIDE 1 -->
+			<div class="swiper-slide slide1" aria-label="Projektowanie strony www: HTML/CSS, JS/PHP, Joomla/Wordpress">
+				<p> 
+					Projektowanie strony www:<br>
+					💡HTML/CSS<br>
+					💡JS/PHP<br>
+					💡Joomla/Wordpress 
+				</p>
+			</div>
+			<div class="swiper-slide slide2" aria-label="Tworzenie logotypów: grafika wektorowa i rastrowa">
+				<p> 
+					Tworzenie logotypów:<br>
+					💡grafika wektorowa<br>
+					💡grafika rastrowa
+				</p>
+			</div>
+			<div class="swiper-slide slide3" aria-label="Projektowanie i wykonawstwo materiałów promocyjnych: ulotki, plakaty, teczki, zakaładki, banery, roll-upy i inne">
+				<p> 
+					Projektowanie i wykonawstwo<br>
+					materiałów promocyjnych:<br>
+					💡ulotki, plakaty<br>
+					💡teczki, zakładki<br>
+					💡banery, roll-upy<br>
+					i inne
+				</p>
+			</div>
+			<div class="swiper-slide slide4" aria-label="Szkolenia, prowadzenie kursów, edukacja">
+				<p> 
+					Szkolenia, prowadzenie kursów, <br>
+					edukacja...
+				</p>
+			</div>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Navigation -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		</div>
+		<!-- O mnie -->
+		<h1> O mnie </h1>
+		<p class="akapit">
+		Witaj! Mam na imię Maciej i od wielu lat tworzę nowoczesne strony internetowe, aplikacje oraz grafikę cyfrową.
+		Wykonuję także różnorodne reklamowe materiały poligraficzne: banery, roll-upy, plakaty, ulotki itp.
+		Specjalizuję się w technologiach HTML, CSS, JavaScript, PHP oraz systemach CMS takich jak WordPress i Joomla. Tworzę zarówno proste strony wizytówkowe, jak i bardziej zaawansowane rozwiązania dopasowane do indywidualnych potrzeb.
+
+		Programuję także aplikacje mobilne i zajmuję się tworzeniem grafiki 2D/3D - korzystając z profesjonalnych narzędzi komercyjnych oraz oprogramowania open source.
+
+		Moją pasją jest dzielenie się wiedzą - od lat aktywnie angażuję się w edukację, ucząc innych projektowania i programowania z praktycznym podejściem.
+		</p>
+		<h4 class="akapit">
+			Zapraszam do kontaktu i skorzystania z mojej oferty!
+		</h4>
+	</main>
+	<footer class="footer">
+    	&copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
+  	</footer>
+	<!-- SOCIAL WIDGET-->
+	<div id="social-widget">
+		<a href="https://www.facebook.com/mmstudio.dg" target="_blank" aria-label="Facebook">
+		  <i class="fab fa-facebook fa-2x"></i>
+		</a>
+		<a href="https://www.instagram.com/mmstudio.dg" target="_blank" aria-label="Instagram">
+		  <i class="fab fa-instagram fa-2x"></i>
+		</a>
 	</div>
-  </nav>
-  <main class="main">
-    <h2>Witamy w MMStudio!</h2>
-    <p>Profesjonalne projektowanie stron internetowych, grafiki reklamowej i aplikacji. Prowadzimy także kursy i szkolenia IT.</p>
+ 	<!-- ACCESSIBILITY WIDGET -->
+	<!-- button opening the widget -->
+	<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
 
-    <!-- Swiper -->
-    <div class="swiper">
-      <div class="swiper-wrapper barlow-bold">
-        <!-- SLIDE 1 -->
-		<div class="swiper-slide slide1">
-			<p> 
-				Projektowanie strony www:<br>
-				💡HTML/CSS<br>
-				💡JS/PHP<br>
-				💡Joomla/Wordpress 
-			</p>
-		</div>
-        <div class="swiper-slide slide2">
-			<p> 
-				Tworzenie logotypów:<br>
-				💡grafika wektorowa<br>
-				💡grafika rastrowa
-			</p>
-		</div>
-        <div class="swiper-slide slide3">
-			<p> 
-				Projektowanie i wykonawstwo<br>
-				materiałów promocyjnych:<br>
-				💡ulotki, plakaty<br>
-				💡teczki, zakładki<br>
-				💡banery, roll-upy<br>
-				   i inne
-			</p>
-		</div>
-		<div class="swiper-slide slide4">
-			<p> 
-				Szkolenia, prowadzenie kursów, <br>
-				edukacja...
-			</p>
-		</div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-	<!-- O mnie -->
-	<h1> O mnie </h1>
-	<p class="akapit">
-	Witaj! Mam na imię Maciej i od wielu lat tworzę nowoczesne strony internetowe, aplikacje oraz grafikę cyfrową.
-	Wykonuję także różnorodne reklamowe materiały poligraficzne: banery, roll-upy, plakaty, ulotki itp.
-	Specjalizuję się w technologiach HTML, CSS, JavaScript, PHP oraz systemach CMS takich jak WordPress i Joomla. Tworzę zarówno proste strony wizytówkowe, jak i bardziej zaawansowane rozwiązania dopasowane do indywidualnych potrzeb.
-
-	Programuję także aplikacje mobilne i zajmuję się tworzeniem grafiki 2D/3D - korzystając z profesjonalnych narzędzi komercyjnych oraz oprogramowania open source.
-
-	Moją pasją jest dzielenie się wiedzą - od lat aktywnie angażuję się w edukację, ucząc innych projektowania i programowania z praktycznym podejściem.
-	</p>
-</main>
-
-
-  <footer class="footer">
-    &copy; 2025 MultiMinds. Wszelkie prawa zastrzeżone.
-  </footer>
-  
-  <!-- DOSTĘPNOŚĆ -->
-		<!-- Przycisk otwierający widżet -->
-			<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
-
-		<!-- Widżet -->
-		<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
-		  <button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
-		  <button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
-		  <button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
-		  <button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
-		  <button onclick="resetAccessibility()">♻️ Resetuj</button>
-		</div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="js/swiper-init.js"></script>
-  
-  <script>
-	  document.querySelectorAll('.options li').forEach(option => {
-	  option.addEventListener('click', function() {
-		const lang = this.dataset.lang;
-		window.location.href = lang === 'pl' ? 'index.html' : 'index-en.html';
-	  });
-	});
-  </script>
-  <!-- ACCESSIBILITY -->
-  <script>
-  // Stan
-  let fontSizes = [100, 120, 140];
-  let currentFontSizeIndex = 0;
-
-  // Toggle widżetu
-	 document.getElementById('toggle-widget').addEventListener('click', () => {
-	  const widget = document.getElementById('accessibility-widget');
-	  widget.classList.toggle('hidden');
-	});
-
-  // Skokowa zmiana czcionki
-  function cycleFontSize() {
-    currentFontSizeIndex = (currentFontSizeIndex + 1) % fontSizes.length;
-    const size = fontSizes[currentFontSizeIndex];
-    document.body.setAttribute('data-font-size', size);
-  }
-
-  // Kontrast
-  function toggleContrast() {
-    document.body.classList.toggle('high-contrast');
-  }
-
-  // Podkreślanie linków
-  function toggleUnderlineLinks() {
-    document.body.classList.toggle('underline-links');
-  }
-
-  // Czcionka dyslektyczna
-  function toggleDyslexicFont() {
-    document.body.classList.toggle('dyslexic-font');
-  }
-
-  // Reset
-  function resetAccessibility() {
-    document.body.removeAttribute('data-font-size');
-    document.body.classList.remove(
-      'high-contrast',
-      'underline-links',
-      'dyslexic-font'
-    );
-    currentFontSizeIndex = 0;
-  }
-</script>
-  
-
-
+	<!-- WIDGET -->
+	<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
+		<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
+		<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
+		<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
+		<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
+		<button onclick="resetAccessibility()">♻️ Resetuj</button>
+	</div>
+	<!--SCRIPTS-->
+	<!--SWIPER-->
+  	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ 	<script src="js/swiper-init.js"></script>
+	
+  	<!-- ACCESSIBILITY SCRIPT-->
+  	<script src="js/accessibility.js"></script>
 </body>
 </html>

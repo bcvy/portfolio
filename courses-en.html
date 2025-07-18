@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MMStudio - web/app/graphics design, IT courses and training</title>
+	<meta name="description" content="Training in programming (C++, PHP, JavaScript), website creation, 2D/3D graphics, Linux and Windows system administration.">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/accessibility.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="js/change_language.js"></script>
+</head>
+<body>
+  	<header class="header">
+		<img src="images/logo-en.png" class="logo" alt="MMStudio logo – web design, apps, graphics. IT courses and training.">>
+  	</header>
+      <nav>
+		<a href="index.html">HOME</a>
+		<a href="webdesign-en.html">WEB DESIGN</a>
+		<a href="graphics-en.html">GRAPHICS & PROMOTION</a>
+		<a href="courses-en.html">COURSES & TRAINING</a>
+		<a href="pricing-en.html">PRICING</a>
+		<a href="contact-en.html">CONTACT</a>
+        <!-- LANGUAGE -->
+		<div class="custom-select">
+			<div class="selected">
+				<img src="flags/english.png" alt="EN" /> English
+			</div>
+					<ul class="options">
+						<li class="lang" data-lang="pl" onclick="setLang('pl')">
+						<img src="flags/polish.png" alt="PL" /> Polski
+						</li>
+						<li class="lang" data-lang="en" onclick="setLang('en')">
+						<img src="flags/english.png" alt="EN" /> English
+						</li>
+					</ul>
+			</div>
+      </nav>
+  	<main class="main">
+		<h1>Courses and Training</h1>
+		<p class="akapit">
+			For many years, I have been sharing my knowledge in the fields of IT, graphics, and programming. I run individual and group courses – both for beginners and for those who want to improve their skills.
+		</p>
+		<p class="akapit">
+			My training offer includes:
+		</p>
+		<ul class="custom-list">
+			<li>💻 Algorithms and programming in C++, PHP, JavaScript</li>
+			<li>🌐 Website development (HTML, CSS, responsiveness)</li>
+			<li>⚙️ CMS handling – WordPress and Joomla</li>
+			<li>🎨 Computer graphics (CorelDraw, Inkscape, Photoshop, GIMP)</li>
+			<li>🧱 3D design – Blender and AutoCAD</li>
+			<li>🎮 Game development in Unity</li>
+			<li>🌐 Basics of computer networks and device configuration</li>
+			<li>🖥️ Server administration – Windows Server and Linux</li>
+		</ul>
+		<h3 class="akapit">Why learn with me?</h3>
+		<ul class="custom-list">
+			<li>🎓 Practical approach – you learn what truly matters</li>
+			<li>🧑‍🏫 Years of experience in education and IT</li>
+			<li>🛠️ Exercises, projects, and real-world scenarios</li>
+			<li>🧩 Training tailored to participant’s level</li>
+			<li>📈 Possibility to learn online or in person</li>
+		</ul>
+ 	</main>
+	<footer class="footer">
+		&copy; 2025 MMStudio. All rights reserved.
+	</footer>
+
+	<!-- ACCESSIBILITY -->
+	<button id="toggle-widget" aria-label="Accessibility" title="Accessibility Options">♿</button>
+
+	<div id="accessibility-widget" aria-label="Accessibility Options" class="hidden">
+		<button onclick="cycleFontSize()">🔠 Change text size</button>
+		<button onclick="toggleContrast()">🌓 Contrast mode</button>
+		<button onclick="toggleUnderlineLinks()">🔗 Underline links</button>
+		<button onclick="toggleDyslexicFont()">📖 Dyslexic font</button>
+		<button onclick="resetAccessibility()">♻️ Reset</button>
+	</div>
+
+	<!--SCRIPTS-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="js/swiper-init.js"></script>
+
+	<!-- ACCESSIBILITY SCRIPT -->
+  	<script src="js/accessibility.js"></script>
+</body>
+</html>

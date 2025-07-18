@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>MMStudio - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
-	<meta name="description" content="Skontaktuj się ze mną mailowo lub telefonicznie. Oferuję profesjonalne wsparcie i indywidualne podejście.">
-	<meta name="keywords" content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
+	<title>MMStudio - web/app/graphics design, IT courses and training</title>
+	<meta name="description" content="Contact me by email or phone. I offer professional support and a personalized approach.">
+	<meta name="keywords" content="website development, web design, 3D graphics, programming courses, WordPress, Joomla, PHP, HTML, CSS">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/accessibility.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -18,19 +18,19 @@
 </head>
 <body>
   <header class="header">
-	<img src="images/logo.png" class="logo">
+	<img src="images/logo.png" class="logo" alt="MMStudio logo – web design, apps, graphics. IT courses and training.">
   </header>
   <nav>
-	<a href="index.html">START</a>
-	<a href="webdesign.html">WEB DESIGN</a>
-	<a href="grafika.html">GRAFIKA I PROMOCJA</a>
-	<a href="kursy.html">KURSY I SZKOLENIA</a>
-	<a href="cennik.html">CENNIK</a>
-	<a href="kontakt.html">KONTAKT</a>
-	<!-- LANGUAGE -->
-	<div class="custom-select">
+	<a href="index.html">HOME</a>
+	<a href="webdesign-en.html">WEB DESIGN</a>
+	<a href="graphics-en.html">GRAPHICS & PROMOTION</a>
+	<a href="courses-en.html">COURSES & TRAINING</a>
+	<a href="pricing-en.html">PRICING</a>
+	<a href="contact-en.html">CONTACT</a>
+    <!-- LANGUAGE -->
+    <div class="custom-select">
 		<div class="selected">
-			<img src="flags/polish.png" alt="PL" /> Polski
+			<img src="flags/english.png" alt="EN" /> English
 		</div>
 				<ul class="options">
 					<li class="lang" data-lang="pl" onclick="setLang('pl')">
@@ -44,50 +44,45 @@
   </nav>
  	<main class="main">
 		<section class="kontakt">
-			<h2>Kontakt</h2>
-			<p><strong>E-mail:</strong> <a href="mailto:mmstudio.dg@gmail.com">mmstudio.dg@gmail.com</a></p>
-			<p><strong>Telefon:</strong> 
-				<button id="showPhone" class="phone-btn">Pokaż numer</button>
+			<h2>Contact</h2>
+			<p><strong>Email:</strong> <a href="mailto:mmstudio.dg@gmail.com">mmstudio.dg@gmail.com</a></p>
+			<p><strong>Phone:</strong> 
+				<button id="showPhone" class="phone-btn">Show number</button>
 				<span id="phoneNumber" class="hidden">+48 502 713 698</span>
 			</p>
-			
 			<form id="contactForm" action="https://formsubmit.co/mmstudio.dg@gmail.com" method="POST">
-				<label for="name">Imię:</label>
+				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" required>
 
-				<label for="email">Adres e-mail:</label>
+				<label for="email">Email address:</label>
 				<input type="email" id="email" name="email" required>
 
-				<label for="message">Wiadomość:</label>
+				<label for="message">Message:</label>
 				<textarea id="message" name="message" rows="5" required></textarea>
 				<input name="_formsubmit_id" type="text" style="display:none">
-				<button type="submit">Wyślij wiadomość</button>
+				<button type="submit">Send message</button>
 			</form>
 		</section>
  	</main>
  <footer class="footer">
-    &copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
+    &copy; 2025 MMStudio. All rights reserved.
  </footer>
   
-  	<!-- ACCESSIBILITY -->
-	<!-- button opening the widget -->
-	<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
+	<!-- ACCESSIBILITY -->
+	<button id="toggle-widget" aria-label="Accessibility" title="Accessibility">♿</button>
 
-	<!-- widget -->
-	<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
-		<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
-		<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
-		<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
-		<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
-		<button onclick="resetAccessibility()">♻️ Resetuj</button>
+	<div id="accessibility-widget" aria-label="Accessibility" class="hidden">
+		<button onclick="cycleFontSize()">🔠 Change text size</button>
+		<button onclick="toggleContrast()">🌓 Contrast mode</button>
+		<button onclick="toggleUnderlineLinks()">🔗 Underline links</button>
+		<button onclick="toggleDyslexicFont()">📖 Dyslexic font</button>
+		<button onclick="resetAccessibility()">♻️ Reset</button>
 	</div>
 
 	<!--SCRIPTS-->
-	<!--SWIPER-->
-  	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
  	<script src="js/swiper-init.js"></script>
-	<!-- ACCESSIBILITY SCRIPT-->
-  	<script src="js/accessibility.js"></script>
+
 	<!-- SHOW PHONE-->
 	<script>
 		document.getElementById('showPhone').addEventListener('click', function(){
@@ -97,5 +92,6 @@
 			phoneBtn.classList.toggle('hidden');
 		})
 	</script>
+  	<script src="js/accessibility.js"></script>
 </body>
 </html>
