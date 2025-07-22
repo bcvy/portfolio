@@ -230,11 +230,55 @@ button[type="submit"] {
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-size: 1.15em;
+}
+
+.submit-btn:hover {
+	background:#39833b;
+	color: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 .kontakt {
 	width: 50%;
 	margin: auto;
 }
+/* kontakt WHATSAPP i MESSANGER */
+
+.contact-button {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.contact-button i {
+  margin-right: 8px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+.messenger {
+  background-color: #0084ff;
+}
+
+.messenger:hover {
+  background-color: #006fde;
+}
+
+
+
 /* PRICING */
 .table-wrapper {
   max-width: 800px;
