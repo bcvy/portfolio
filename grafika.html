@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>MMStudio - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
-	<meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
-	<meta name="keywords" content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
+	<meta name="description"
+		content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
+	<meta name="keywords"
+		content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/swiper.css" />
 	<link rel="stylesheet" href="css/accessibility.css" />
@@ -15,7 +18,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<script src="js/change_language.js"></script>
@@ -23,99 +28,124 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSZPRX01WX"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
 	gtag('config', 'G-KSZPRX01WX'); 
 </script>
+
 <body>
-<div class="container">
-  <header class="header">
-	<img src="images/logo.png" class="logo">
-  </header>
-  <nav>
-	<a href="index.html">START</a>
-	<a href="webdesign.html">WEB DESIGN</a>
-	<a href="grafika.html">GRAFIKA I PROMOCJA</a>
-	<a href="kursy.html">KURSY I SZKOLENIA</a>
-	<a href="cennik.html">CENNIK</a>
-	<a href="kontakt.html">KONTAKT</a>
-	<!-- LANGUAGE -->
-	<div class="custom-select">
-		<div class="selected">
-			<img src="flags/polish.png" alt="PL" /> Polski
-		</div>
+	<div class="container">
+		<header class="header">
+			<img src="images/logo.png" class="logo">
+		</header>
+		<nav>
+			<a href="index.html">START</a>
+			<a href="webdesign.html">STRONY WWW</a>
+			<a href="grafika.html">GRAFIKA I PROMOCJA</a>
+			<a href="kursy.html">KURSY I SZKOLENIA</a>
+			<a href="cennik.html">CENNIK</a>
+			<a href="kontakt.html">KONTAKT</a>
+			<!-- LANGUAGE -->
+			<div class="custom-select">
+				<div class="selected">
+					<img src="flags/polish.png" alt="PL" /> Polski
+				</div>
 				<ul class="options">
 					<li class="lang" data-lang="pl" onclick="setLang('pl')">
-					<img src="flags/polish.png" alt="PL" /> Polski
+						<img src="flags/polish.png" alt="PL" /> Polski
 					</li>
 					<li class="lang" data-lang="en" onclick="setLang('en')">
-					<img src="flags/english.png" alt="EN" /> English
+						<img src="flags/english.png" alt="EN" /> English
 					</li>
 				</ul>
-		</div>
-  </nav>
-  <main class="main subpage">
-		<section class="grafika">
-			<h1> Grafika cyfrowa </h1>
-			<p class="akapit">
-				Oferuję kompleksowe usługi z zakresu grafiki komputerowej — od identyfikacji wizualnej, po materiały marketingowe gotowe do druku lub publikacji online.
-			</p>
-			<p class="akapit">
-				W ramach współpracy oferuję:
-			</p>
-			<ul class="custom-list"> <li>🖋️ Projektowanie logotypów i elementów identyfikacji</li> <li>📱 Grafiki i animacje na social media</li> <li>📰 Ulotki, plakaty i banery reklamowe</li> <li>📂 Teczki ofertowe i materiały firmowe</li> <li>📦 Roll-upy i inne formaty wystawiennicze</li> <li>🖨️ Same projekty lub kompletne realizacje z drukiem</li> </ul>
-			<h3 class="akapit">Dlaczego warto mi powierzyć projekt graficzny?</h3>
-			<ul class="custom-list"> <li>🎯 Spójność wizualna i dopasowanie do grupy docelowej</li> <li>📐 Profesjonalne przygotowanie do druku i publikacji</li> <li>🧠 Kreatywne podejście i otwartość na potrzeby klienta</li> <li>⏱️ Terminowość i elastyczne podejście do zleceń</li> <li>🤝 Możliwość stałej współpracy graficznej</li> </ul>
-		</section>
-		<section class="prawy">
-		<!-- Swiper -->
-			<div class="swiper2 swiper-wb">
-				<div class="swiper-wrapper barlow-bold">
-					<!-- SLIDE 1 -->
-					<div class="swiper-slide swiper-slide-wb slide1-gfx" aria-label="Przykład materiałów poligraficznych wykonanych przeze mnie. Plakat rekrutacyjny dla zespołu szkół"></div>
-					<div class="swiper-slide swiper-slide-wb slide2-gfx" aria-label="Przykład materiałów reklamowych wykonanych przeze mnie. Roll-up dla zespołu szkół"></div>
-					<div class="swiper-slide swiper-slide-wb slide3-gfx" aria-label="Kolejny przykład materiałów promocyjnych wykonanych przeze mnie. Ulotka reklamowa dla przychodni lekarskiej"></div>
-					<div class="swiper-slide swiper-slide-wb slide4-gfx" aria-label="Materiały graficzne opracowane dla klientów. Logotypy i identyfikacja graficzna"></div>
-					<div class="swiper-slide swiper-slide-wb slide5-gfx" aria-label="Baner reklamowy wykonany przeze mnie dla zespołu szkół"></div>
-				</div>
-				
 			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		&copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
-	</footer>
+		</nav>
+		<main class="main subpage">
+			<section class="grafika">
+				<h1> Grafika cyfrowa </h1>
+				<p class="akapit">
+					Oferuję kompleksowe usługi z zakresu grafiki komputerowej — od identyfikacji wizualnej, po materiały
+					marketingowe gotowe do druku lub publikacji online.
+				</p>
+				<p class="akapit">
+					W ramach współpracy oferuję:
+				</p>
+				<ul class="custom-list">
+					<li>🖋️ Projektowanie logotypów i elementów identyfikacji</li>
+					<li>📱 Grafiki i animacje na social media</li>
+					<li>📰 Ulotki, plakaty i banery reklamowe</li>
+					<li>📂 Teczki ofertowe i materiały firmowe</li>
+					<li>📦 Roll-upy i inne formaty wystawiennicze</li>
+					<li>🖨️ Same projekty lub kompletne realizacje z drukiem</li>
+				</ul>
+				<h3 class="akapit">Dlaczego warto mi powierzyć projekt graficzny?</h3>
+				<ul class="custom-list">
+					<li>🎯 Spójność wizualna i dopasowanie do grupy docelowej</li>
+					<li>📐 Profesjonalne przygotowanie do druku i publikacji</li>
+					<li>🧠 Kreatywne podejście i otwartość na potrzeby klienta</li>
+					<li>⏱️ Terminowość i elastyczne podejście do zleceń</li>
+					<li>🤝 Możliwość stałej współpracy graficznej</li>
+				</ul>
+			</section>
+			<section class="prawy">
+				<!-- Swiper -->
+				<div class="swiper2 swiper-wb">
+					<div class="swiper-wrapper barlow-bold">
+						<!-- SLIDE 1 -->
+						<div class="swiper-slide swiper-slide-wb slide1-gfx"
+							aria-label="Przykład materiałów poligraficznych wykonanych przeze mnie. Plakat rekrutacyjny dla zespołu szkół">
+						</div>
+						<div class="swiper-slide swiper-slide-wb slide2-gfx"
+							aria-label="Przykład materiałów reklamowych wykonanych przeze mnie. Roll-up dla zespołu szkół">
+						</div>
+						<div class="swiper-slide swiper-slide-wb slide3-gfx"
+							aria-label="Kolejny przykład materiałów promocyjnych wykonanych przeze mnie. Ulotka reklamowa dla przychodni lekarskiej">
+						</div>
+						<div class="swiper-slide swiper-slide-wb slide4-gfx"
+							aria-label="Materiały graficzne opracowane dla klientów. Logotypy i identyfikacja graficzna">
+						</div>
+						<div class="swiper-slide swiper-slide-wb slide5-gfx"
+							aria-label="Baner reklamowy wykonany przeze mnie dla zespołu szkół"></div>
+					</div>
 
-  	<!-- ACCESSIBILITY -->
-	<!-- button opening the widget -->
-	<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			&copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
+		</footer>
 
-	<!-- WIDGET -->
-	<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
-		<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
-		<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
-		<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
-		<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
-		<button onclick="resetAccessibility()">♻️ Resetuj</button>
+		<!-- ACCESSIBILITY -->
+		<!-- button opening the widget -->
+		<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
+
+		<!-- WIDGET -->
+		<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
+			<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
+			<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
+			<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
+			<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
+			<button onclick="resetAccessibility()">♻️ Resetuj</button>
+		</div>
+		<!--SCRIPTS-->
+		<!--SWIPER-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script src="js/swiper-init.js"></script>
+
+		<!-- ACCESSIBILITY SCRIPT-->
+		<script src="js/accessibility.js"></script>
+
+		<!-- SOCIAL WIDGET-->
+		<div id="social-widget">
+			<a href="https://www.facebook.com/mmstudio.dg" target="_blank" aria-label="Facebook">
+				<i class="fab fa-facebook fa-2x"></i>
+			</a>
+			<a href="https://www.instagram.com/mmstudio.dg" target="_blank" aria-label="Instagram">
+				<i class="fab fa-instagram fa-2x"></i>
+			</a>
+		</div>
 	</div>
-	<!--SCRIPTS-->
-	<!--SWIPER-->
-  	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- 	<script src="js/swiper-init.js"></script>
-	
-  	<!-- ACCESSIBILITY SCRIPT-->
-  	<script src="js/accessibility.js"></script>
-
-	<!-- SOCIAL WIDGET-->
-    <div id="social-widget">
-    	<a href="https://www.facebook.com/mmstudio.dg" target="_blank" aria-label="Facebook">
-    		<i class="fab fa-facebook fa-2x"></i>
-    	</a>
-    	<a href="https://www.instagram.com/mmstudio.dg" target="_blank" aria-label="Instagram">
-    		<i class="fab fa-instagram fa-2x"></i>
-    	</a>
-    </div>
-</div>
 </body>
+
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>MMStudio - projektowanie www/grafiki/aplikacji, kursy i szkolenia IT</title>
-	<meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
-	<meta name="keywords" content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
+	<meta name="description"
+		content="Tworzę nowoczesne i responsywne strony internetowe, aplikacje i grafikę. Sprawdź moją ofertę i doświadczenie.">
+	<meta name="keywords"
+		content="tworzenie stron, webdesign, grafika 3D, kursy programowania, WordPress, Joomla, PHP, HTML, CSS">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/swiper.css" />
 	<link rel="stylesheet" href="css/accessibility.css" />
@@ -15,7 +18,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/web/OpenDyslexic.css">
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<script src="js/change_language.js"></script>
@@ -23,102 +28,102 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSZPRX01WX"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
 	gtag('config', 'G-KSZPRX01WX'); 
 </script>
+
 <body>
-<div class="container">
-  <header class="header">
-	<img src="images/logo.png" class="logo">
-  </header>
-  <nav>
-	<a href="index.html">START</a>
-	<a href="webdesign.html">WEB DESIGN</a>
-	<a href="grafika.html">GRAFIKA I PROMOCJA</a>
-	<a href="kursy.html">KURSY I SZKOLENIA</a>
-	<a href="cennik.html">CENNIK</a>
-	<a href="kontakt.html">KONTAKT</a>
-	<!-- LANGUAGE -->
-	<div class="custom-select">
-		<div class="selected">
-			<img src="flags/polish.png" alt="PL" /> Polski
-		</div>
+	<div class="container">
+		<header class="header">
+			<img src="images/logo.png" class="logo">
+		</header>
+		<nav>
+			<a href="index.html">START</a>
+			<a href="webdesign.html">STRONY WWW</a>
+			<a href="grafika.html">GRAFIKA I PROMOCJA</a>
+			<a href="kursy.html">KURSY I SZKOLENIA</a>
+			<a href="cennik.html">CENNIK</a>
+			<a href="kontakt.html">KONTAKT</a>
+			<!-- LANGUAGE -->
+			<div class="custom-select">
+				<div class="selected">
+					<img src="flags/polish.png" alt="PL" /> Polski
+				</div>
 				<ul class="options">
 					<li class="lang" data-lang="pl" onclick="setLang('pl')">
-					<img src="flags/polish.png" alt="PL" /> Polski
+						<img src="flags/polish.png" alt="PL" /> Polski
 					</li>
 					<li class="lang" data-lang="en" onclick="setLang('en')">
-					<img src="flags/english.png" alt="EN" /> English
+						<img src="flags/english.png" alt="EN" /> English
 					</li>
 				</ul>
+			</div>
+		</nav>
+		<main class="main">
+			<section class="kontakt">
+				<h2>Kontakt</h2>
+				<p><strong>E-mail:</strong> <a href="mailto:mmstudio.dg@gmail.com">mmstudio.dg@gmail.com</a></p>
+				<p><strong>Telefon:</strong>
+					<button id="showPhone" class="phone-btn">Pokaż numer</button>
+					<span id="phoneNumber" class="hidden">+48 502 713 698</span>
+				</p>
+
+				<form id="contactForm" action="https://formsubmit.co/mmstudio.dg@gmail.com" method="POST">
+					<label for="name">Imię:</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Adres e-mail:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="message">Wiadomość:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+					<input name="_formsubmit_id" type="text" style="display:none">
+					<button type="submit">Wyślij wiadomość</button>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			&copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
+		</footer>
+
+		<!-- ACCESSIBILITY -->
+		<!-- button opening the widget -->
+		<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
+
+		<!-- widget -->
+		<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
+			<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
+			<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
+			<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
+			<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
+			<button onclick="resetAccessibility()">♻️ Resetuj</button>
 		</div>
-  </nav>
- 	<main class="main">
-		<section class="kontakt">
-			<h2>Kontakt</h2>
-			<p><strong>E-mail:</strong> <a href="mailto:mmstudio.dg@gmail.com">mmstudio.dg@gmail.com</a></p>
-			<p><strong>Telefon:</strong> 
-				<button id="showPhone" class="phone-btn">Pokaż numer</button>
-				<span id="phoneNumber" class="hidden">+48 502 713 698</span>
-			</p>
-			
-			<form id="contactForm" action="https://formsubmit.co/mmstudio.dg@gmail.com" method="POST">
-				<label for="name">Imię:</label>
-				<input type="text" id="name" name="name" required>
 
-				<label for="email">Adres e-mail:</label>
-				<input type="email" id="email" name="email" required>
-
-				<label for="message">Wiadomość:</label>
-				<textarea id="message" name="message" rows="5" required></textarea>
-				<input name="_formsubmit_id" type="text" style="display:none">
-				<button type="submit">Wyślij wiadomość</button>
-			</form>
-		</section>
- 	</main>
- <footer class="footer">
-    &copy; 2025 MMStudio. Wszelkie prawa zastrzeżone.
- </footer>
-  
-  	<!-- ACCESSIBILITY -->
-	<!-- button opening the widget -->
-	<button id="toggle-widget" aria-label="Dostępność" title="Ułatwienia dostępu">♿</button>
-
-	<!-- widget -->
-	<div id="accessibility-widget" aria-label="Ułatwienia dostępu" class="hidden">
-		<button onclick="cycleFontSize()">🔠 Zmień rozmiar tekstu</button>
-		<button onclick="toggleContrast()">🌓 Tryb kontrastu</button>
-		<button onclick="toggleUnderlineLinks()">🔗 Podkreśl linki</button>
-		<button onclick="toggleDyslexicFont()">📖 Czcionka dyslektyczna</button>
-		<button onclick="resetAccessibility()">♻️ Resetuj</button>
+		<!--SCRIPTS-->
+		<!--SWIPER-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script src="js/swiper-init.js"></script>
+		<!-- ACCESSIBILITY SCRIPT-->
+		<script src="js/accessibility.js"></script>
+		<!-- SHOW PHONE-->
+		<script>
+			document.getElementById('showPhone').addEventListener('click', function () {
+				const phoneNumber = document.getElementById('phoneNumber');
+				const phoneBtn = document.getElementById('showPhone');
+				phoneNumber.classList.toggle('hidden');
+				phoneBtn.classList.toggle('hidden');
+			})
+		</script>
 	</div>
-
-	<!--SCRIPTS-->
-	<!--SWIPER-->
-  	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- 	<script src="js/swiper-init.js"></script>
-	<!-- ACCESSIBILITY SCRIPT-->
-  	<script src="js/accessibility.js"></script>
-	<!-- SHOW PHONE-->
-	<script>
-		document.getElementById('showPhone').addEventListener('click', function(){
-			const phoneNumber = document.getElementById('phoneNumber');
-			const phoneBtn = document.getElementById('showPhone');
-			phoneNumber.classList.toggle('hidden');
-			phoneBtn.classList.toggle('hidden');
-		})
-	</script>
-
-</div>
-	  <!-- SOCIAL WIDGET-->
+	<!-- SOCIAL WIDGET-->
 	<div id="social-widget">
 		<a href="https://www.facebook.com/mmstudio.dg" target="_blank" aria-label="Facebook">
-		<i class="fab fa-facebook fa-2x"></i>
+			<i class="fab fa-facebook fa-2x"></i>
 		</a>
 		<a href="https://www.instagram.com/mmstudio.dg" target="_blank" aria-label="Instagram">
-		<i class="fab fa-instagram fa-2x"></i>
+			<i class="fab fa-instagram fa-2x"></i>
 		</a>
 	</div>
 </body>
