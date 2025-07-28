@@ -64,6 +64,11 @@
 		  color: #fff !important;
 		}
 
+		.high-contrast .table-wrapper {
+		  background-color: #000 !important;
+		  color: #fff !important;
+		}
+
 		.high-contrast a {
 		  color: #00ffff !important;
 		}
